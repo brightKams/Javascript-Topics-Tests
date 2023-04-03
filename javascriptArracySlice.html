@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARRAY SLICE</title>
+</head>
+<body>
+    
+
+
+    <script lang="javascript" type="text/javascript">
+        // SLICE
+
+        let myName = "BRIGHT";
+
+        myName = myName.slice(3, 4);
+        alert(myName);  //RESULT - "G"
+
+        // toUpperCase Method & SLICING VIA JS 
+
+        let country = prompt("Please enter your country");
+        let slicedCountry = country.slice(1, country.length);
+        // alert(slicedCountry);
+        slicedCountry = slicedCountry.toLowerCase()
+
+       country = country[0].toUpperCase() + slicedCountry;
+        console.log(country);
+
+        // slicedCountry = country[0].toUpperCase();
+        // console.log(slicedCountry);
+
+        alert("Hello " + country);
+
+    </script>
+</body>
+</html>

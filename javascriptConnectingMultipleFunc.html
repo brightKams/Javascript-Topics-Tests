@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MULTIPLE FUNCTIONS</title>
+</head>
+<body>
+    
+
+
+
+    <script lang="javascript" type="text/javascript">
+            // Functions
+
+            // function getMilk(money){
+            //     console.log(money);
+            // }
+
+            // console.log(50);
+
+            function getMilk(amount){
+                let numberOfBottles = Math.floor(amount / 1.5);
+                console.log(numberOfBottles);
+                return amount % 1.5 ;
+            }
+         let change = getMilk(55);
+            console.log(`Your change is ` + change + " Pound");
+            alert("Your available balance is " + getMilk(50) + " Pound");
+
+            console.log(50%1.5);
+
+    </script>
+</body>
+</html>

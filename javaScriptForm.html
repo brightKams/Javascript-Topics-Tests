@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Form basic</title>
+    <style>
+        input[type="number"] {
+            width: 50px;
+        }
+
+        input[id="answer"] {
+            width: clamp(100px, 25vw, 65rem);
+        }
+    </style>
+</head>
+<body>
+
+    <form action="">
+
+        width: <br>
+        <input type="number" name="" id="width">
+         <br> <br>
+
+         Height: <br>
+         <input type="number" name="" id="height"> 
+         <br> <br>
+
+         <input type="button" value="Calculate" onclick="calc()">
+
+         <input type="number" name="" id="answer" >
+
+    </form>
+
+    
+    
+
+
+    <script type="text/javascript" lang="javascript">
+        function calc() {
+            let w = document.querySelector("#width").value;
+            let h = document.querySelector("#height").value;
+            let answer = document.querySelector("#answer");
+
+            area = w * h;
+            return answer.value = area;
+            
+            console.log(area);
+        }
+
+        calc();
+
+
+
+
+    </script>
+</body>
+</html>

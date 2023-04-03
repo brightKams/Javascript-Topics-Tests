@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESTRUCTURING ARRAYS IN JAVASCRIPT</title>
+</head>
+<body>
+    
+
+
+
+
+    <script type="text/javascript" lang="javascript">
+
+        // DESTRUCTURING ARRAYS
+        // Destructuring an array is assigning arrays to variables
+
+        // Example 1
+
+        let namesOfAnimal = ["cat", "cow", "dog", "Elephant" ];
+        document.write(` <strong style="font-size: 5rem;"> ${namesOfAnimal[3]} </strong> `);
+
+        console.log(namesOfAnimal);
+        for(let indx = 0; indx <= namesOfAnimal.length-1; indx++ )   {
+            console.log(`${namesOfAnimal[indx]}, hELLO `);
+            document.write(`<br> ${namesOfAnimal[indx]}`);
+        }
+
+        let [animal1, animal2, animal3, animal4] = namesOfAnimal;
+        console.log(animal3, animal2);
+
+        // Example 2
+
+        let carNames = ["Toyota", "Lexus", "BMW", "Innoson"];
+
+        let car1, remainingCars;
+
+        [car1, ...remainingCars] = carNames;
+
+        console.log([car1,  ...remainingCars] );
+
+
+        
+    </script>
+</body>
+</html>

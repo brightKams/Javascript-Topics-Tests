@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT LOOP</title>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+    <script lang="javascript" type="text/javascript">
+
+        // LOOP
+            // Loop is a sequence of instructions that is continually repeated until a certain condition is met.
+
+            // TYPES OF LOOP
+                
+                // WHILE LOOP
+            let count = 0;
+
+            while(count < 10){
+
+                document.write(` ${count} &nbsp;<h1 style="display:inline-block; border: 5px solid;"> Text ONE </h1> First Loop <br>` );
+
+                // document.write(count, "&nbsp; First Loop <br />")
+                // console.log(count);
+                count+=1;
+                // count = count +1;
+                // count++;
+                console.log(count);
+
+                if(count++ ==10){
+                break;
+                }
+                
+            }
+            
+
+
+
+                // Do-while Loop
+
+                let num;
+                num = 0;
+                do {
+                    console.log(num, "Do While Loop <br/> ");
+                    num++
+                } while(num <= 10 );  
+            
+
+                // FOR LOOP
+
+            let number = 0
+
+            for (let index = 0; index < 20; index++) {
+                // let number = 0;
+                // document.write(index, " <br/>");
+                document.write(`${index} <br />`);
+                
+            }
+             
+
+            // LOOPING THROUGH EVEN NUMBERS
+            document.write(" What <br> <br> <br>")
+            for(let allNum = 0; allNum <=20; allNum++)   {
+                
+                if (allNum === 0) {
+                    document.write(`${allNum} is nothing <br />`)
+                }
+                else if (allNum % 2 === 0)   {
+                    document.write(`${allNum} is an even Number <br />`);
+                }
+
+                else if (allNum % 2 === 1)  {
+                    document.write(`${allNum} is an Odd Number <br />`);
+                }
+                else if (allNum < 0)    {
+                    document.write(`${allNum} is a negative Number <br />`)
+                }
+                
+                 
+            }
+           
+            document.write("<br> <br> <br>");
+
+
+            // for(let nums = 1; nums <=100; nums++)    {
+            //     // document.write(`${nums} `);
+            //     document.write(`<br>`);
+            //     if (nums % 3 === 0 && nums % 5 === 0) {
+            //         document.write(` ${nums} FizzBuzz`);
+            //     }
+            //     else if (nums % 3 === 0)    {
+            //         document.write(`${nums} FIZZ`);
+            //     }
+
+            //     else if (nums % 5 === 0) {
+            //         document.write(`${nums} BUZZ`);
+            //     }
+
+            //     else {
+            //         document.write(`${nums}`);
+            //     }
+
+            // }
+
+            document.write("<br> <br> <br>");
+
+
+            // using Do while Loop
+            let num1 = 1;
+            document.write(`<br>`);
+            // do {
+            //     document.write(`<br>`);
+                
+            //     num1++ 
+               
+            //     if (num1 % 3 === 0 && num1 % 5 === 0) {
+            //         document.write(`${num1} FizzBuzz`);
+            //     }
+
+            //     else if (num1 % 3 === 0)    {
+            //         document.write(`${num1} FIZZ`);
+            //     }
+
+            //     else if (num1 % 5 === 0) {
+            //         document.write(`${num1} BUZZ`);
+            //     }
+
+            //     else {
+            //         // document.write(`${num1}`);
+            //         console.log(num1);
+            //     }
+
+            //     // num1++ 
+            // } while(num1 < 100);
+
+
+            while (num1 < 100) {
+
+                document.write(`<br>`);
+                
+                num1++ 
+               
+                if (num1 % 3 === 0 && num1 % 5 === 0) {
+                    document.write(`${num1} FizzBuzz`);
+                }
+
+                else if (num1 % 3 === 0)    {
+                    document.write(`${num1} FIZZ`);
+                }
+
+                else if (num1 % 5 === 0) {
+                    document.write(`${num1} BUZZ`);
+                }
+
+                else {
+                    // document.write(`${num1}`);
+                    console.log(num1);
+                }
+
+            }
+            
+            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </script>
+</body>
+</html>

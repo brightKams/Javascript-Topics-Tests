@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript OBJECT</title>
+
+</head>
+<body>
+
+    <h2> Hello World!!!</h2>
+    <!-- Objects can also be called "ASSOCIATIVE ARRAYS" -->
+
+
+
+    <script>
+
+
+        let aboutme = {
+            name: ["Bright"],
+            age: 15,
+            female: false,
+            colors: ["navy-Blue", "yellow", "white"]
+        }
+
+        // Retrieving Data to a Data Structure
+     console.log(aboutme["name"][0])
+    //  OR
+        console.log(aboutme["female"]);
+
+    console.log(
+        aboutme
+    );
+
+    let myAge = aboutme.age
+    console.log(`My age is ${myAge} years`);
+
+    // Adding Data to an Object Data Structure
+
+    let newAboutme = {}
+    newAboutme.name = "Ohakam"
+    newAboutme["age"] = 18
+    console.log(newAboutme.name);
+    console.log(newAboutme.age)
+
+
+        // Updating Data to an Object Data Structure
+
+    console.log(aboutme.name = "Chidozie")
+    console.log(aboutme.age +=1)
+    aboutme.colors.push("Green")
+    console.log(aboutme)
+
+    // Deleting Data from an Object Data Structure
+
+delete aboutme.name
+console.log(aboutme);
+
+// Checking for membership in an Object Data Structure
+// You can only check for membership using keys in a Object Data Structure.
+// Example:
+
+let checkForAge = aboutme.hasOwnProperty("name")
+console.log(checkForAge);
+
+// Traversing Through an Object Data Structure
+// This also means looping through an Object.
+
+for(let items in aboutme) {
+    aboutme[items]
+    console.log(aboutme[items]);
+}
+
+
+
+    
+
+
+    </script>
+    
+</body>
+</html>

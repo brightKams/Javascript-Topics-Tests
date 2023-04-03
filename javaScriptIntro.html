@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Introduction</title>
+</head>
+<body>
+
+
+
+
+    <script>
+        // Logical Operators; These ar not(!), and(&), and or(||)
+
+    // Truthies and Falsies
+    // Truthies will evaluate to truth when it is forced to be a boolean. In JavaScript, Only empty primitives evaluates to false.
+    // The || operator returns the first truthie, while the the "&&" operator returns the first falsie.
+
+    // Ternary Operators
+    let num = 10
+    let even = num % 3 == 0 ? "even" : "odd"
+console.log(even);
+    
+// control structures
+
+        // conditional Statements
+        let gender = "non"
+        if ( gender == "male") {
+            console.log("correct")
+        } 
+
+       
+       else if (gender == "female") {
+           console.log("female")
+       }
+
+       else if (gender != "male" && gender != "female") {
+            console.log(`${gender} you are a haemophrodaite`)
+       }
+
+    //    String literals
+    // This means combining JavaScript codes and string statements while writing a line of code.
+
+    // For Loop
+
+    let friendList = ["Sam", "Vic", "Tim"]
+    for(items of friendList) {
+        console.log(friendList);
+        console.log(items)
+        let body = document.querySelector("body")
+        document.body.innerHTML += `${items} </br >`
+        document.querySelector("body").inerHTML = ` ${items}`
+        body.style.backgroundColor = "teal"
+
+    }
+
+
+
+    let scores = prompt("Please enter a number");
+    if (scores >= 75 && scores <= 100) {
+        console.log("First Class");
+        
+    }
+
+    else if(scores >=65 && scores <= 74 ) {
+        console.log("Second Class Upper");
+    }
+
+    else if(scores >=50 && scores <= 64 ) {
+        console.log("Second Class Lower");
+    }
+
+    else if(scores >=41 && scores <= 49 ) {
+        console.log("Third Class");
+    }
+
+    else if(scores >=30 && scores <= 40 ) {
+        console.log("Pass");
+    }
+
+    else if (scores >100) {
+        console.log("Error")
+    } 
+    
+    else if(scores <0) {
+        console.log("Error")
+    }
+
+    else    {
+        console.log("FAIL!!!")
+    }
+
+    
+
+    
+
+        
+
+    </script>
+    
+</body>
+</html>

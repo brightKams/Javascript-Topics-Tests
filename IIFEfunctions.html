@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIFE FUNCTIONS</title>
+</head>
+<body>
+
+    <!-- <button class="btn" onclick="incr">CLICK ME</button> -->
+
+    <script lang="javascript" type="text/javascript">
+
+        // IIFE => IMMEDIATELY INVOKED FUNCTION EXPRESSION
+
+        // Function expression is putting a fucntion in a variable.
+        // A function without a name can be called automatically by putting the entire fucntion inside a bracket with another opening and closing bracket to contain an argument or parameter.
+        // An Example is shown below;
+
+
+        let apps = (function app () {
+            let carId = 123;
+            console.log("in function");
+            console.log(carId);
+            
+
+            return {
+                name: "Bright",
+                age: 5,
+                color: "dark"
+            };
+        })();
+
+        console.log(apps);
+
+
+
+
+
+        // CLOSURE
+
+            // A closure is a variable decalred outside a function but called inside a function
+        let mainAge = 7
+        let newFunc = (function ()   {
+            let named = "Alpha";
+            return {
+                age: mainAge
+            };
+        })();
+        
+        console.log(newFunc);
+
+        // console.log(newFunc());
+
+        let newApp = (function app () {
+            let carId = 123;
+            // console.log("in function");
+            console.log(carId);
+
+            let anotherID = function()  {
+                return carId;
+            };
+
+            return {
+                getID: anotherID
+            };
+        })();
+
+        console.log(newApp.getID());
+
+
+
+        // SAMPLE
+
+        let newApps = (function app () {
+            let carId = 123;
+            // console.log("in function");
+            console.log(carId);
+
+            let getId = function()  {
+                return carId;
+            };
+
+            return {
+                getId: getId
+            };
+        })();
+
+        console.log(newApps.getId());
+
+
+    </script>
+</body>
+</html>

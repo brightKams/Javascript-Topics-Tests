@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THIS KEYWORD</title>
+</head>
+<body>
+    
+
+
+
+
+
+
+    <script lang="javascript" type="text/javascript">
+
+        // This keyword is a global scope that means the window.
+        // Example is given below;
+
+
+        let o =  {
+            
+            carId: "Innoson Vehicle",
+            getId: function()   {
+                console.log(this);
+                return this.carId;
+            }
+            
+        };
+        console.log(this);
+        console.log(o.getId());
+
+
+
+    </script>
+</body>
+</html>
