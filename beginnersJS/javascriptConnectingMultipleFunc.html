@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MULTIPLE FUNCTIONS</title>
+</head>
+<body>
+    
+
+
+
+    <script lang="javascript" type="text/javascript">
+            // Functions
+
+            // function getMilk(money){
+            //     console.log(money);
+            // }
+
+            // console.log(50);
+
+            // || MULTIPLE FUNCIONS
+        
+            // || MAIN FUNCTIONS
+            function getMilk(amount, cost){
+
+                // let numberOfBottles = Math.floor(amount / 1.5);
+                let calcBottlesResult = calcBottles(amount, cost);
+                console.log(`Buy ${calcBottlesResult} bottles of milk`);
+                return calcChange(amount, cost);
+            }
+            
+        
+                    function calcBottles(startingMoney, costPerBottle) {
+                        let numOfBottles = Math.floor(startingMoney / costPerBottle);
+
+                        return numOfBottles;
+                    }
+
+
+
+        
+ 
+
+         let change = getMilk(55, 1.5);
+            console.log(`Your change is ` + change + " Pound");
+            alert("Your available balance is " + calcChange(31, 1.5) + " Pound");
+
+            console.log(50 % 1.5);
+
+            //  || CalcChange Function
+
+        function calcChange(startingMoney, costPerBottle) {
+                
+                let change = startingMoney % costPerBottle;
+                return change
+            }
+
+
+           
+
+            prompt("Please enter your name");
+
+
+    function yearsLeft(days, weeks, months) {
+
+            let lifetime = ` You have ${calcDays(days)}, ${calcWeeks(weeks)}, and ${calcMonths(months)} left....  `;
+            return lifetime ;
+        
+    }
+
+    yearsLeft(365, 52, 12);
+
+    function calcDays(days) {
+        daysLeft = days * 90;
+        return daysLeft ;
+        
+    }
+
+    calcDays(50);
+    function calcWeeks(weeks) {
+        weeksLeft = weeks * 90;
+        return weeksLeft ;
+        
+    }
+    function calcMonths(months) {
+        monthsLeft = months * 90;
+        return monthsLeft ;
+        
+    }
+
+
+            
+
+
+    </script>
+</body>
+</html>

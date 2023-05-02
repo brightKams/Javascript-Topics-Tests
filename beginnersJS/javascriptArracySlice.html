@@ -24,9 +24,17 @@
         let slicedCountry = country.slice(1, country.length);
         // alert(slicedCountry);
         slicedCountry = slicedCountry.toLowerCase()
+        console.log(slicedCountry);
 
-       country = country[0].toUpperCase() + slicedCountry;
-        console.log(country);
+    //    country = country[0].toUpperCase() + slicedCountry;
+    //     console.log(country);
+
+    // || OR
+    
+    // countryIndex = country[0].toUpperCase();
+    country = country[0].toUpperCase() + country.slice(1, country.length)
+    console.log(country);
+
 
         // slicedCountry = country[0].toUpperCase();
         // console.log(slicedCountry);
