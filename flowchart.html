@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLOWCHART</title>
+</head>
+<body>
+
+    <script>
+        // FLOWCHART
+        
+        // A Flowchart is a diagrammatic representation of an algorithm, or a step by step approach of solving a task.
+
+        // || TASK - LEAP YEAR CHALLENGE EXERCISE
+
+        //  Write a program that works out whether if a given year is a leap year. A normal year has 365 days, leap years have 366, with an extra day in February. The reason why we have leap years is really fascinating.
+
+        // How to work out if a particular year is a leap year
+        //  - A year is a leap year if it is evenly divisible by 4.
+        //  - A year is a leap year if it is also evenly divisible by 100.
+        //  - Also that year is evenly divisible by 400.
+
+
+        // SOLUTION - Leap Year Challenge
+
+        function isLeapYear(year) {
+            // if(year % 4 === 0  ) {
+            //     if (year % 100 ) {
+            //         if (year % 400 ) {
+            //             return "Leap Year";
+            //         }
+            //         else {
+            //             return "Not a Leap Year.";
+            //         }
+            //     }
+            //     else { 
+            //         return "Leap Year";
+            //     }
+                
+            // }
+            
+            // else {
+            //     return "Not a leap Year";
+            // }
+
+            if (year % 4 === 0 && year % 100  && year % 400 ) {
+                return "Leap Year";
+            }
+
+            else {
+                return "Not a Leap Year" ;
+            }
+
+        }
+
+        alert(isLeapYear(2028));
+        // console.log(isLeapYear(2000))
+
+        console.log(2028 % 400);
+    </script>
+</body>
+</html>
