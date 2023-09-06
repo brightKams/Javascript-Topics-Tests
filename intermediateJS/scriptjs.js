@@ -112,3 +112,9 @@ console.log(`famrAnimalStrings: ${farmAnimalString}`);
 
 let sortedFarmAnimals = farmAnimals.sort();
 console.log(`SortedFarmAnimals: ` + farmAnimals);
+
+console.log(); console.log();
+
+let number = 5;
+number = number.toString();
+console.log(typeof number);

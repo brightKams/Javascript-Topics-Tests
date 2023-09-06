@@ -22,10 +22,11 @@
             let yourName = prompt("Enter your name here...")
             let partnerName = prompt("Enter your partner's name here...")
             let loveScore = Math.floor(Math.random() * 95 + 1);
-            console.log(loveScore);
-           return alert(`Love Score for ${yourName} and ${partnerName} is ${loveScore}% `);
+            const message = `Love Score for ${yourName} and ${partnerName} is ${loveScore}% `;
+            console.log(`${loveScore}`)
+            console.log(`${message}`);
+           return  alert(`Love Score for ${yourName} and ${partnerName} is ${loveScore}% `);
         }
-
         loveCalc();
 
     </script>
