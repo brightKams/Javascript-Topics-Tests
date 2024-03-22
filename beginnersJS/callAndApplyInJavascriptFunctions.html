@@ -31,8 +31,51 @@
         console.log(addTo(3));
         console.dir(addTo);
 
+// Call and apply method is used to call a function indirectly
+        // CALL:
+        // The call() method is takes parameters seperated by commas
+
+        let o = {
+            carId: 123,
+            getId: function(argument) {
+                return argument + this.carId;
+            }
+        };
+        let newCarId = {carId : "456"};
+        console.log( o.getId.call(newCarId, "ID: ") );
 
 
+        // APPLY:
+        // The apply() method takes parametersa as an array
+
+        // Example I
+        let applyMethod = {
+            getName: function(prefix) {
+                return prefix + this.nameID;
+            }
+        };
+
+        let newNameID = {nameID : "Bright"};
+
+        console.log(applyMethod.getName.apply(newNameID, ["Name: "]));
+
+
+        // Example II
+        
+        var product = { 
+                 title: "Dell",
+                 price : 500
+        };
+
+        function productInfo() {
+            console.log(this);
+            let productDetail = function() {
+             console.log(this.title, "costs", +this.price);
+            }
+        };
+
+
+        productInfo.apply(product, [true]);
     </script>
 </body>
 </html>
